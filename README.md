@@ -2,7 +2,7 @@
 
 An interactive, user-friendly food ordering website designed for The Global Plate Restaurant. This single-page application allows users to book a table, select dishes from multiple cuisines, view total cost, and simulate a payment experience with success visuals and sound.
 
-##🚀 Deployed URL
+## 🚀 Deployed URL
 
 The website is live at: https://hotel-payment.vercel.app/
 
