@@ -34,7 +34,7 @@ The website is live at: https://hotel-payment.vercel.app/
 - CSS3
 - Vanilla JavaScript
 - Audio and GIF integration
-- <dialog> element for modal UI
+- dialog element for modal UI
 
 ---
 
