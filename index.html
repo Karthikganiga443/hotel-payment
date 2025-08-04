@@ -68,24 +68,34 @@
             color: black;
         }
     }
-
+    .sec2{
+        border: 0px solid black;
+        box-shadow: 0px 0px 20px rgb(203, 48, 48);
+        padding:25px;
+    }
 
     .sec .sec2 {
-        
         margin: 10px 50px 0px 10px;
         flex: 2;
         display: flex;
         flex-direction: column;
-        justify-content:space-evenly;
         color: white;
+    }
+    .sec2 input{
+        width: 40px;
     }
 
     /* NEW: style to align label text left and checkbox right */
     .sec2 label {
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        padding: 5px 0;
+        padding: 5px ;
+    }
+    .sec2 label:hover{
+        border: 1px solid black;
+        box-shadow: 0px 0px 10px red;
+        transform:scale(1.05);
+        font-weight:bolder;
     }
     .sec2 .order{
         display: block;
@@ -177,40 +187,40 @@
 <label ><strong>South-Indian</strong></label>
 <hr>
 
-<label>Idli - 40rps <input type="checkbox" value="40" class="item"></label>
-<label>Dosa - 50rps <input type="checkbox" value="50" class="item"></label>
-<label>Vada - 30rps <input type="checkbox" value="30" class="item"></label>
-<label>Uttapam - 60rps <input type="checkbox" value="60" class="item"></label>
-<label>Pongal - 55rps <input type="checkbox" value="55" class="item"></label>
+<label>Idli - 40rps <input type="number" min="0" max="100" itemprice="40" class="item" ></label>
+<label>Dosa - 50rps <input type="number" min="0" max="100" itemprice="50" class="item" ></label>
+<label>Vada - 30rps <input type="number" min="0" max="100" itemprice="30" class="item"></label>
+<label>Uttapam - 60rps <input type="number" min="0" max="100" itemprice="60" class="item"></label>
+<label>Pongal - 55rps <input type="number" min="0" max="100" itemprice="55" class="item" ></label>
 
 <hr>
 <label><strong>North-Indian</strong></label>
 <hr>
 
-<label>Chapati - 40rps <input type="checkbox" value="40" class="item"></label>
-<label>Paratha - 50rps <input type="checkbox" value="50" class="item"></label>
-<label>Paneer Butter Masala - 120rps <input type="checkbox" value="120" class="item"></label>
-<label>Dal Fry - 80rps <input type="checkbox" value="80" class="item"></label>
-<label>Butter Naan - 35rps <input type="checkbox" value="35" class="item"></label>
+<label>Chapati - 40rps <input type="number" min="0" max="100" itemprice="40" class="item" ></label>
+<label>Paratha - 50rps <input type="number" min="0" max="100" itemprice="50" class="item" ></label>
+<label>Paneer Butter Masala - 120rps <input type="number" min="0" max="100" itemprice="120" class="item" ></label>
+<label>Dal Fry - 80rps <input type="number" min="0" max="100" itemprice="80" class="item" ></label>
+<label>Butter Naan - 35rps <input type="number" min="0" max="100" itemprice="35" class="item" ></label>
 
 <hr>
 <label><strong>Chinese</strong></label>
 <hr>
 
-<label>Fried Rice - 90rps <input type="checkbox" value="90" class="item"></label>
-<label>Gobi Manchurian - 80rps <input type="checkbox" value="80" class="item"></label>
-<label>Chilli Paneer - 100rps <input type="checkbox" value="100" class="item"></label>
-<label>Chicken 65 - 120rps <input type="checkbox" value="120" class="item"></label>
-<label>Veg Biryani - 100rps <input type="checkbox" value="100" class="item"></label>
+<label>Fried Rice - 90rps <input type="number" min="0" max="100" itemprice="90" class="item" ></label>
+<label>Gobi Manchurian - 80rps <input type="number" min="0" max="100" itemprice="80" class="item" ></label>
+<label>Chilli Paneer - 100rps <input type="number" min="0" max="100" itemprice="100" class="item" ></label>
+<label>Chicken 65 - 120rps <input type="number" min="0" max="100" itemprice="120" class="item" ></label>
+<label>Veg Biryani - 100rps <input type="number" min="0" max="100" itemprice="100" class="item" ></label>
 
 <hr>
 <label><strong>Italian</strong></label>
 <hr>
 
-<label>Pizza - 150rps <input type="checkbox" value="150"class="item"></label>
-<label>Pasta - 100rps <input type="checkbox" value="100" class="item"></label>
-<label> Carbonara - 120rps <input type="checkbox" value="120" class="item"></label>
-<label>Arancini - 150rps <input type="checkbox" value="150" class="item"></label>
+<label>Pizza - 150rps <input type="number" min="0" max="100" itemprice="150" class="item" ></label>
+<label>Pasta - 100rps <input type="number" min="0" max="100" itemprice="100" class="item" ></label>
+<label> Carbonara - 120rps <input type="number" min="0" max="100" itemprice="120" class="item" ></label>
+<label>Arancini - 150rps <input type="number" min="0" max="100" itemprice="150" class="item" ></label>
         </section>
          
     </section>
@@ -236,13 +246,13 @@
         var paymentdoing=document.getElementById("payment");
         var audiosucess=document.getElementById("sucessaudio");
         var totalprice=document.getElementById("totalprice");
-        var checkboxdata=document.getElementsByClassName("item");
+        var inputquantity=document.getElementsByClassName("item");
         function totalconfirm(){
-            var total=0;
-            for (let i=0; i<checkboxdata.length;i++){
-                if (checkboxdata[i].checked){
-                    total+=parseInt(checkboxdata[i].value);
-                }
+            let total=0;
+            let tp=0;
+            for (i=0;i<inputquantity.length; i++){
+                tp=parseInt(inputquantity[i].value*inputquantity[i].getAttribute("itemprice"));
+                total+=tp;
             }
             totalprice.innerHTML=`\u20B9${total}/-`;
             if (total==0){
