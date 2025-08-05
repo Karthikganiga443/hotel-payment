@@ -30,6 +30,7 @@ header small {
     display: flex;
     flex-direction: column;
     color: white;
+    
 }
 
 .sec1 input {
@@ -41,7 +42,7 @@ header small {
 }
 
 .sec1 button {
-    margin: 10px 10px 10px 0px;
+    margin: 10px 10px 20px 0px;
     padding: 10px;
     border: none;
     background-color: rgb(255, 65, 65);
@@ -155,4 +156,7 @@ button:hover {
     padding: 5px;
     background-color: rgb(1, 247, 1);
     border-radius: 20px;
+}
+.generatebill{
+    /* display: none; */
 }

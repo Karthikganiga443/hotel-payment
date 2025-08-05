@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Global Plate Restaurant</title>
-    <link rel="icon" href="https://images.freeimages.com/365/images/istock/previews/9126/91267209-restaurant-cafe-vector-logo-chef-or-cuisine-cooking-cookery-icon.jpg">
+    <link rel="icon"
+        href="https://images.freeimages.com/365/images/istock/previews/9126/91267209-restaurant-cafe-vector-logo-chef-or-cuisine-cooking-cookery-icon.jpg">
     <link rel="stylesheet" href="./hotel_payment.css">
 </head>
 
@@ -14,89 +15,112 @@
         <header>
             <h1>Welcome To The Global Plate Restaurant</h1>
             <small><big>We are happy to Serve You!!!</big></small>
-        <h2>Please Fill The Details and Select Your Dish</h2>
+            <h2>Please Fill The Details and Select Your Dish</h2>
         </header>
-        
+
     </center>
     <section class="sec">
         <section class="sec1">
-            <label>Name: <input type="text" placeholder="Enter Your Name" > </label>
-            <label>Phone Number: <input type="tel" placeholder="Enter Your Phone Number"></label>
-            <select name="" id="">
+            <label>Name: <input type="text" placeholder="Enter Your Name" id="customername"> </label>
+            <label>Phone Number: <input type="tel" placeholder="Enter Your Phone Number"
+                    id="customerphonenumber"></label>
+            <select name="" id="tablenumber" required>
                 <option value="" disabled selected>Book Your Table</option>
-                <option value="">1</option>
-                <option value="">2</option>
-                <option value="">3</option>
-                <option value="">4</option>
-                <option value="">5</option>
-                <option value="">6</option>
-                <option value="">7</option>
-                <option value="">8</option>
-                <option value="">9</option>
-                <option value="">10</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
             </select>
             <button value="button" onclick="totalconfirm()">Submit</button>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.531355071297!2d77.54650267794192!3d13.001798854612375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3d85275d565f%3A0x723b0d322ead92df!2s19%2C%2012th%20Cross%20Rd%2C%201st%20Block%2C%20Rajajinagar%2C%20Bengaluru%2C%20Karnataka%20560010!5e0!3m2!1sen!2sin!4v1754394374839!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
         <section class="sec2">
             <label class="order"><strong>Order-Items</strong></label>
-<hr>
-<label ><strong>South-Indian</strong></label>
-<hr>
+            <hr>
+            <label><strong>South-Indian</strong></label>
+            <hr>
 
-<label>Idli - 40rps <input type="number" min="0" max="100" itemprice="40" class="item" ></label>
-<label>Dosa - 50rps <input type="number" min="0" max="100" itemprice="50" class="item" ></label>
-<label>Vada - 30rps <input type="number" min="0" max="100" itemprice="30" class="item"></label>
-<label>Uttapam - 60rps <input type="number" min="0" max="100" itemprice="60" class="item"></label>
-<label>Pongal - 55rps <input type="number" min="0" max="100" itemprice="55" class="item" ></label>
+            <label>Idli - 40rps <input type="number" min="0" max="100" itemprice="40" itemname="Idli - 40rps"
+                    class="item"></label>
+            <label>Dosa - 50rps <input type="number" min="0" max="100" itemprice="50" itemname="Dosa - 50rps"
+                    class="item"></label>
+            <label>Vada - 30rps <input type="number" min="0" max="100" itemprice="30" itemname="Vada - 30rps"
+                    class="item"></label>
+            <label>Uttapam - 60rps <input type="number" min="0" max="100" itemprice="60" itemname="Uttapam - 60rps"
+                    class="item"></label>
+            <label>Pongal - 55rps <input type="number" min="0" max="100" itemprice="55" itemname="Pongal - 55rps"
+                    class="item"></label>
 
-<hr>
-<label><strong>North-Indian</strong></label>
-<hr>
+            <hr>
+            <label><strong>North-Indian</strong></label>
+            <hr>
 
-<label>Chapati - 40rps <input type="number" min="0" max="100" itemprice="40" class="item" ></label>
-<label>Paratha - 50rps <input type="number" min="0" max="100" itemprice="50" class="item" ></label>
-<label>Paneer Butter Masala - 120rps <input type="number" min="0" max="100" itemprice="120" class="item" ></label>
-<label>Dal Fry - 80rps <input type="number" min="0" max="100" itemprice="80" class="item" ></label>
-<label>Butter Naan - 35rps <input type="number" min="0" max="100" itemprice="35" class="item" ></label>
+            <label>Chapati - 40rps <input type="number" min="0" max="100" itemprice="40" itemname="Chapati - 40rps"
+                    class="item"></label>
+            <label>Paratha - 50rps <input type="number" min="0" max="100" itemprice="50" itemname="Paratha - 50rps"
+                    class="item"></label>
+            <label>Paneer Butter Masala - 120rps <input type="number" min="0" max="100" itemprice="120"
+                    itemname="Paneer Butter Masala - 120rps" class="item"></label>
+            <label>Dal Fry - 80rps <input type="number" min="0" max="100" itemprice="80" itemname="Dal Fry - 80rps"
+                    class="item"></label>
+            <label>Butter Naan - 35rps <input type="number" min="0" max="100" itemprice="35"
+                    itemname="Butter Naan - 35rps" class="item"></label>
 
-<hr>
-<label><strong>Chinese</strong></label>
-<hr>
+            <hr>
+            <label><strong>Chinese</strong></label>
+            <hr>
 
-<label>Fried Rice - 90rps <input type="number" min="0" max="100" itemprice="90" class="item" ></label>
-<label>Gobi Manchurian - 80rps <input type="number" min="0" max="100" itemprice="80" class="item" ></label>
-<label>Chilli Paneer - 100rps <input type="number" min="0" max="100" itemprice="100" class="item" ></label>
-<label>Chicken 65 - 120rps <input type="number" min="0" max="100" itemprice="120" class="item" ></label>
-<label>Veg Biryani - 100rps <input type="number" min="0" max="100" itemprice="100" class="item" ></label>
+            <label>Fried Rice - 90rps <input type="number" min="0" max="100" itemprice="90"
+                    itemname="Fried Rice - 90rps" class="item"></label>
+            <label>Gobi Manchurian - 80rps <input type="number" min="0" max="100" itemprice="80"
+                    itemname="Gobi Manchurian - 80rps" class="item"></label>
+            <label>Chilli Paneer - 100rps <input type="number" min="0" max="100" itemprice="100"
+                    itemname="Chilli Panner - 100rps" class="item"></label>
+            <label>Chicken 65 - 120rps <input type="number" min="0" max="100" itemprice="120"
+                    itemname="Chicken 65 - 120rps" class="item"></label>
+            <label>Veg Biryani - 100rps <input type="number" min="0" max="100" itemprice="100"
+                    itemname="Veg Biryani - 100rps" class="item"></label>
 
-<hr>
-<label><strong>Italian</strong></label>
-<hr>
+            <hr>
+            <label><strong>Italian</strong></label>
+            <hr>
 
-<label>Pizza - 150rps <input type="number" min="0" max="100" itemprice="150" class="item" ></label>
-<label>Pasta - 100rps <input type="number" min="0" max="100" itemprice="100" class="item" ></label>
-<label> Carbonara - 120rps <input type="number" min="0" max="100" itemprice="120" class="item" ></label>
-<label>Arancini - 150rps <input type="number" min="0" max="100" itemprice="150" class="item" ></label>
+            <label>Pizza - 150rps <input type="number" min="0" max="100" itemprice="150" itemname="Pizza - 150rps"
+                    class="item"></label>
+            <label>Pasta - 100rps <input type="number" min="0" max="100" itemprice="100" itemname="Pasta - 100rps"
+                    class="item"></label>
+            <label> Carbonara - 120rps <input type="number" min="0" max="100" itemprice="120"
+                    itemname="Carbonara - 120rps" class="item"></label>
+            <label>Arancini - 150rps <input type="number" min="0" max="100" itemprice="150" itemname="Arancini - 150rps"
+                    class="item"></label>
         </section>
-         
+
     </section>
     <dialog id="price">
         <h1>Total Price : </h1>
         <h2 id="totalprice"></h2>
-        <img src="https://play-lh.googleusercontent.com/lomBq_jOClZ5skh0ELcMx4HMHAMW802kp9Z02_A84JevajkqD87P48--is1rEVPfzGVf" alt="QR" width="150px" height="150px">
+        <img src="https://play-lh.googleusercontent.com/lomBq_jOClZ5skh0ELcMx4HMHAMW802kp9Z02_A84JevajkqD87P48--is1rEVPfzGVf"
+            alt="QR" width="150px" height="150px">
         <br>
-        <button  value="button" onclick="paymentdone()">Confirm</button>
+        <button value="button" onclick="paymentdone()">Confirm</button>
     </dialog>
     <dialog id="payment">
         <img src="./ezgif.com-crop.gif" alt="payment successfull" width="300px" height="300px">
         <div class="pay">
             <h1>THANK YOU!</h1>
-        <p><big>Payment done successfully</big></p>
-        <small>You will be directed to home page shortly <br>or click here to return to home page</small><br>
-        <audio src="paytmpaymen-pfn2fc67_pFCzp9j8.mp3" id="sucessaudio"></audio>
-        <button onclick="popupclose()">Home</button>
+            <p><big>Payment done successfully</big></p>
+            <small>You will be directed to home page shortly <br>or click here to return to home page</small><br>
+            <audio src="paytmpaymen-pfn2fc67_pFCzp9j8.mp3" id="sucessaudio"></audio>
+            <button onclick="popupclose()">Home</button>
         </div>
     </dialog>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="./hotel_payment.js"></script>
 </body>
 
