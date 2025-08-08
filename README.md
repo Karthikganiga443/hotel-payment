@@ -15,11 +15,11 @@ The website is live at: https://hotel-payment.vercel.app/
 
 ## 📁 Project Structure
 ```
-├── index.html # Main webpage
-├── hotel_payment.css # Styling (UI and layout)
-├── hotel_payment.js # JS logic (PDF, payment handling)
-├── paytmpaymen-pfn2fc67_pFCzp9j8.mp3 # Success sound
-├── ezgif.com-crop.gif # Payment success animation
+├── index.html                          # Main webpage
+├── hotel_payment.css                   # Styling (UI and layout)
+├── hotel_payment.js                    # JS logic (PDF, payment handling)
+├── paytmpaymen-pfn2fc67_pFCzp9j8.mp3   # Success sound
+├── ezgif.com-crop.gif                  # Payment success animation
 ```
 ---
 
