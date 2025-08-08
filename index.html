@@ -2,126 +2,190 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Global Plate Restaurant</title>
-    <link rel="icon"
-        href="https://images.freeimages.com/365/images/istock/previews/9126/91267209-restaurant-cafe-vector-logo-chef-or-cuisine-cooking-cookery-icon.jpg">
-    <link rel="stylesheet" href="./hotel_payment.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Global Plate Restaurant</title>
+        <link rel="icon"
+                href="https://images.freeimages.com/365/images/istock/previews/9126/91267209-restaurant-cafe-vector-logo-chef-or-cuisine-cooking-cookery-icon.jpg">
+        <link rel="stylesheet" href="./hotel_payment.css">
 </head>
 
 <body>
-    <center>
-        <header>
-            <h1>Welcome To The Global Plate Restaurant</h1>
-            <small><big>We are happy to Serve You!!!</big></small>
-            <h2>Please Fill The Details and Select Your Dish</h2>
-        </header>
+        <center>
+                <header>
+                        <h1>Welcome To The Global Plate Restaurant</h1>
+                        <small><big>We are happy to Serve You!!!</big></small>
+                        <h2>Please Fill The Details and Select Your Dish</h2>
+                </header>
 
-    </center>
-    <section class="sec">
-        <section class="sec1">
-            <label>Name: <input type="text" placeholder="Enter Your Name" id="customername"> </label>
-            <label>Phone Number: <input type="tel" placeholder="Enter Your Phone Number"
-                    id="customerphonenumber"></label>
-            <select name="" id="tablenumber" required>
-                <option value="" disabled selected>Book Your Table</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-            </select>
-            <button value="button" onclick="totalconfirm()">Submit</button>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.531355071297!2d77.54650267794192!3d13.001798854612375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3d85275d565f%3A0x723b0d322ead92df!2s19%2C%2012th%20Cross%20Rd%2C%201st%20Block%2C%20Rajajinagar%2C%20Bengaluru%2C%20Karnataka%20560010!5e0!3m2!1sen!2sin!4v1754394374839!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
-        <section class="sec2">
-            <label class="order"><strong>Order-Items</strong></label>
-            <hr>
-            <label><strong>South-Indian</strong></label>
-            <hr>
+        </center>
+        <section class="sec">
+                <section class="sec1">
+                        <label>Name: <input type="text" placeholder="Enter Your Name" id="customername"> </label>
+                        <label>Phone Number: <input type="tel" placeholder="Enter Your Phone Number"
+                                        id="customerphonenumber"></label>
+                        <select name="" id="tablenumber" required>
+                                <option value="" disabled selected>Book Your Table</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                        </select>
+                        <button value="button" onclick="totalconfirm()">Submit</button>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.531355071297!2d77.54650267794192!3d13.001798854612375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3d85275d565f%3A0x723b0d322ead92df!2s19%2C%2012th%20Cross%20Rd%2C%201st%20Block%2C%20Rajajinagar%2C%20Bengaluru%2C%20Karnataka%20560010!5e0!3m2!1sen!2sin!4v1754394374839!5m2!1sen!2sin"
+                                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </section>
+                <section class="sec2">
+                        <label class="order"><strong>Order-Items</strong></label>
+                        <hr>
+                        <label for=""><strong>South-Indian</strong></label>
+                        <hr>
+                        <div class="menu">
+                                <div class="card">
+                                        <img src="https://www.ohmyveg.co.uk/wp-content/uploads/2023/07/Idli-1-scaled-e1722868852202.jpg"
+                                                alt="idli">
+                                        <label>Idli - 40rps <input type="number" min="0" max="100" itemprice="40"
+                                                        itemname="Idli - 40rps" class="item"></label>
+                                </div>
+                                <div class="card">
+                                        <img src="https://www.foodiaq.com/wp-content/uploads/2024/11/Dosa-with-sambar.jpg"
+                                                alt="dosa">
+                                        <label>Dosa - 50rps <input type="number" min="0" max="100" itemprice="50"
+                                                        itemname="Dosa - 50rps" class="item"></label>
+                                </div>
+                                <div class="card">
+                                        <img src="https://madhurasrecipe.com/wp-content/uploads/2020/10/Medu-Vada-Marathi-Recipe-feature-585x366.jpg" alt="vada">
+                                         <label>Vada - 30rps <input type="number" min="0" max="100" itemprice="30" itemname="Vada - 30rps" class="item"></label>
 
-            <label>Idli - 40rps <input type="number" min="0" max="100" itemprice="40" itemname="Idli - 40rps"
+                                </div>
+                                <div class="card">
+                                        <img src="https://www.chefkunalkapur.com/wp-content/uploads/2021/03/Rava-Uttapam.jpg?v=1619150769" alt="uttapam">
+                                         <label>Uttapam - 60rps <input type="number" min="0" max="100" itemprice="60" itemname="Uttapam - 60rps"
                     class="item"></label>
-            <label>Dosa - 50rps <input type="number" min="0" max="100" itemprice="50" itemname="Dosa - 50rps"
-                    class="item"></label>
-            <label>Vada - 30rps <input type="number" min="0" max="100" itemprice="30" itemname="Vada - 30rps"
-                    class="item"></label>
-            <label>Uttapam - 60rps <input type="number" min="0" max="100" itemprice="60" itemname="Uttapam - 60rps"
-                    class="item"></label>
-            <label>Pongal - 55rps <input type="number" min="0" max="100" itemprice="55" itemname="Pongal - 55rps"
+                                </div>
+                                <div class="card">
+                                        <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2021/01/pongal-ven-pongal.jpg" alt="pongal">
+                                        <label>Pongal - 55rps <input type="number" min="0" max="100" itemprice="55" itemname="Pongal - 55rps"
                     class="item"></label>
 
+                                </div>
+                        </div>
+                        <hr>
+                        <label><strong>North-Indian</strong></label>
             <hr>
-            <label><strong>North-Indian</strong></label>
-            <hr>
+            <div class="menu">
+                <div class="card">
+                        <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2022/11/chapati-recipe-soft.jpg" alt="Chapathi"><label>Chapati - 40rps <input type="number" min="0" max="100" itemprice="40" itemname="Chapati - 40rps"
+                    class="item"></label>
 
-            <label>Chapati - 40rps <input type="number" min="0" max="100" itemprice="40" itemname="Chapati - 40rps"
+                </div>
+                <div class="card">
+                        <img src="https://holycowvegan.net/wp-content/uploads/2023/03/paratha-recipe-17-1.jpg" alt="paratha"><label>Paratha - 50rps <input type="number" min="0" max="100" itemprice="50" itemname="Paratha - 50rps"
                     class="item"></label>
-            <label>Paratha - 50rps <input type="number" min="0" max="100" itemprice="50" itemname="Paratha - 50rps"
-                    class="item"></label>
-            <label>Paneer Butter Masala - 120rps <input type="number" min="0" max="100" itemprice="120"
+
+                </div>
+                <div class="card">
+                        <img src="https://www.cookwithmanali.com/wp-content/uploads/2019/05/Paneer-Butter-Masala-500x500.jpg" alt="panner butter masala"> <label>Paneer Butter Masala - 120rps <input type="number" min="0" max="100" itemprice="120"
                     itemname="Paneer Butter Masala - 120rps" class="item"></label>
-            <label>Dal Fry - 80rps <input type="number" min="0" max="100" itemprice="80" itemname="Dal Fry - 80rps"
+                </div>
+                <div class="card">
+                        <img src="https://vegecravings.com/wp-content/uploads/2018/02/Dal-Fry-Recipe-Step-By-Step-Instructions.jpg" alt="dal fry"> <label>Dal Fry - 80rps <input type="number" min="0" max="100" itemprice="80" itemname="Dal Fry - 80rps"
                     class="item"></label>
-            <label>Butter Naan - 35rps <input type="number" min="0" max="100" itemprice="35"
+
+                </div>
+                <div class="card">
+                        <img src="https://foodess.com/wp-content/uploads/2023/02/Butter-Naan-2.jpg" alt="butter naan"><label>Butter Naan - 35rps <input type="number" min="0" max="100" itemprice="35"
                     itemname="Butter Naan - 35rps" class="item"></label>
 
+                </div>
+            </div>
             <hr>
             <label><strong>Chinese</strong></label>
             <hr>
-
-            <label>Fried Rice - 90rps <input type="number" min="0" max="100" itemprice="90"
+            <div class="menu">
+                <div class="card">
+                        <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2020/12/fried-rice.jpg" alt="fried rice"> <label>Fried Rice - 90rps <input type="number" min="0" max="100" itemprice="90"
                     itemname="Fried Rice - 90rps" class="item"></label>
-            <label>Gobi Manchurian - 80rps <input type="number" min="0" max="100" itemprice="80"
+                </div>
+                <div class="card">
+                        <img src="https://rainbowplantlife.com/wp-content/uploads/2022/02/Gobi-Manchurian-cover-photo-on-white-tile-1-of-1.jpg" alt="gobi"><label>Gobi Manchurian - 80rps <input type="number" min="0" max="100" itemprice="80"
                     itemname="Gobi Manchurian - 80rps" class="item"></label>
-            <label>Chilli Paneer - 100rps <input type="number" min="0" max="100" itemprice="100"
+                </div>
+                <div class="card">
+                        <img src="https://files.mob-cdn.co.uk/recipes/2024/07/Chilli-Paneer-Recipe.jpg" alt="chillipanner"> <label>Chilli Paneer - 100rps <input type="number" min="0" max="100" itemprice="100"
                     itemname="Chilli Panner - 100rps" class="item"></label>
-            <label>Chicken 65 - 120rps <input type="number" min="0" max="100" itemprice="120"
+                </div>
+                <div class="card">
+                        <img src="https://files.mob-cdn.co.uk/recipes/2024/07/Chilli-Paneer-Recipe.jpg" alt="cheicken 65"><label>Chicken 65 - 120rps <input type="number" min="0" max="100" itemprice="120"
                     itemname="Chicken 65 - 120rps" class="item"></label>
-            <label>Veg Biryani - 100rps <input type="number" min="0" max="100" itemprice="100"
+                </div>
+                <div class="card">
+                        <img src="https://product-assets.faasos.io/eatsure/production/veg-biryani-online.jpeg" alt="veg biryani">  <label>Veg Biryani - 100rps <input type="number" min="0" max="100" itemprice="100"
                     itemname="Veg Biryani - 100rps" class="item"></label>
-
+                </div>
+            </div>
             <hr>
             <label><strong>Italian</strong></label>
             <hr>
+            <div class="menu">
+                <div class="card">
+                        <img src="https://product-assets.faasos.io/eatsure/production/veg-biryani-online.jpeg" alt="pizza"><label>Pizza - 150rps <input type="number" min="0" max="100" itemprice="150" itemname="Pizza - 150rps"
+                    class="item"></label>
 
-            <label>Pizza - 150rps <input type="number" min="0" max="100" itemprice="150" itemname="Pizza - 150rps"
+                </div>
+                <div class="card">
+                        <img src="https://product-assets.faasos.io/eatsure/production/veg-biryani-online.jpeg" alt="pasta"> <label>Pasta - 100rps <input type="number" min="0" max="100" itemprice="100" itemname="Pasta - 100rps"
                     class="item"></label>
-            <label>Pasta - 100rps <input type="number" min="0" max="100" itemprice="100" itemname="Pasta - 100rps"
-                    class="item"></label>
-            <label> Carbonara - 120rps <input type="number" min="0" max="100" itemprice="120"
+
+                </div>
+                <div class="card">
+                        <img src="https://veganwithgusto.com/wp-content/uploads/2021/05/spicy-spaghetti-arrabbiata.jpg" alt="Spaghetti"><label> Spaghetti - 150rps <input type="number" min="0" max="100" itemprice="150"
+                    itemname="Spaghetti - 150rp" class="item"></label>
+
+                </div>
+                <div class="card">
+                        <img src="https://veganwithgusto.com/wp-content/uploads/2021/05/spicy-spaghetti-arrabbiata.jpg" alt="Risotto"><label> Risotto - 100rps <input type="number" min="0" max="100" itemprice="100"
+                    itemname="Risotto - 100rps" class="item"></label>
+
+                </div>
+                <div class="card">
+                        <img src="https://www.allrecipes.com/thmb/Vg2cRidr2zcYhWGvPD8M18xM_WY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/11973-spaghetti-carbonara-ii-DDMFS-4x3-6edea51e421e4457ac0c3269f3be5157.jpg" alt="Carbonara"><label> Carbonara - 120rps <input type="number" min="0" max="100" itemprice="120"
                     itemname="Carbonara - 120rps" class="item"></label>
-            <label>Arancini - 150rps <input type="number" min="0" max="100" itemprice="150" itemname="Arancini - 150rps"
-                    class="item"></label>
-        </section>
+                </div>
+            </div>
 
-    </section>
-    <dialog id="price">
-        <h1>Total Price : </h1>
-        <h2 id="totalprice"></h2>
-        <img src="https://play-lh.googleusercontent.com/lomBq_jOClZ5skh0ELcMx4HMHAMW802kp9Z02_A84JevajkqD87P48--is1rEVPfzGVf"
-            alt="QR" width="150px" height="150px">
-        <br>
-        <button value="button" onclick="paymentdone()">Confirm</button>
-    </dialog>
-    <dialog id="payment">
-        <img src="./ezgif.com-crop.gif" alt="payment successfull" width="300px" height="300px">
-        <div class="pay">
-            <h1>THANK YOU!</h1>
-            <p><big>Payment done successfully</big></p>
-            <small>You will be directed to home page shortly <br>or click here to return to home page</small><br>
-            <audio src="paytmpaymen-pfn2fc67_pFCzp9j8.mp3" id="sucessaudio"></audio>
-            <button onclick="popupclose()">Home</button>
-        </div>
-    </dialog>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-    <script src="./hotel_payment.js"></script>
+<hr>
+                </section>
+
+        </section>
+        <dialog id="price">
+                <h1>Total Price : </h1>
+                <h2 id="totalprice"></h2>
+                <img src="https://play-lh.googleusercontent.com/lomBq_jOClZ5skh0ELcMx4HMHAMW802kp9Z02_A84JevajkqD87P48--is1rEVPfzGVf"
+                        alt="QR" width="150px" height="150px">
+                <br>
+                <button value="button" onclick="paymentdone()">Confirm</button>
+        </dialog>
+        <dialog id="payment">
+                <img src="./ezgif.com-crop.gif" alt="payment successfull" width="300px" height="300px">
+                <div class="pay">
+                        <h1>THANK YOU!</h1>
+                        <p><big>Payment done successfully</big></p>
+                        <small>You will be directed to home page shortly <br>or click here to return to home
+                                page</small><br>
+                        <audio src="paytmpaymen-pfn2fc67_pFCzp9j8.mp3" id="sucessaudio"></audio>
+                        <button onclick="popupclose()">Home</button>
+                </div>
+        </dialog>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+        <script src="./hotel_payment.js"></script>
 </body>
 
 </html>

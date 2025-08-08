@@ -66,43 +66,47 @@ button:hover {
 .sec1 select option {
     color: black;
 }
-
-.sec2 {
-    border: 0px solid black;
-    box-shadow: 0px 0px 20px rgb(203, 48, 48);
-    padding: 25px;
-}
-
-.sec .sec2 {
-    margin: 10px 50px 0px 10px;
-    flex: 2;
-    display: flex;
-    flex-direction: column;
+.sec2{
     color: white;
+    text-align: center;
 }
-
-.sec2 input {
-    width: 40px;
+.sec2 .order{
+    font-size: 50px;
 }
-
-.sec2 label {
+.sec2 .menu{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    padding:5px;
+}
+.sec2 .menu .card img{
+    width:100px;
+    height:100px;
+    border-radius: 10px;
+}
+.sec2 .menu .card{
     display: flex;
-    justify-content: space-between;
-    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:180px;
+    padding:10px;
+    box-shadow: 0px 0px 10px lightgray;
+    margin:20px;  
+    border-radius: 10px;
 }
-
-.sec2 label:hover {
-    border: 1px solid black;
+.sec2 .menu .card:hover{
+    transform: scale(1.09);
     box-shadow: 0px 0px 10px red;
-    transform: scale(1.05);
-    font-weight: bolder;
 }
-
-.sec2 .order {
-    display: block;
-    margin: auto;
+.sec2 .menu .card input{
+    width: 30px;
 }
-
+.sec2 .menu .card label{
+    margin-top: 5px;
+}
+.sec2{
+    box-shadow: 0px 0px 10px gray;
+}
 #price {
     margin: auto;
     padding: 10px;
@@ -156,7 +160,4 @@ button:hover {
     padding: 5px;
     background-color: rgb(1, 247, 1);
     border-radius: 20px;
-}
-.generatebill{
-    /* display: none; */
 }
