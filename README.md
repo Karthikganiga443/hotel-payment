@@ -37,9 +37,8 @@ The website is live at: https://hotel-payment.vercel.app/
 
 # 🛠️ Technologies Used
 
-- HTML5
-- CSS3
-- Vanilla JavaScript
+- HTML5, CSS3, JS
+- jsPDF (CDN)
 - Audio and GIF integration
 - dialog element for modal UI
 
