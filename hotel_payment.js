@@ -82,7 +82,6 @@ function paymentdone() {
         pdf.save("Hotel_Bill.pdf"); // ✅ generate PDF here after payment
     }
 }
-
 function popupclose() {
     paymentdoing.close();
 }

@@ -9,155 +9,206 @@ body {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0, 0.7)),
                 url(https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cmVzdGF1cmFudHxlbnwwfHwwfHx8MA%3D%3D);
     background-size: cover;
+    background-position: center;
+    min-height: 100vh;
 }
 
 header h1,
 header h2,
 header small {
-    padding: 10px;
+    padding: 1rem;
     color: white;
 }
 
 .sec {
     display: flex;
     justify-content: center;
-    padding: 10px;
+    align-items: flex-start;
+    padding: 1rem;
+    gap: 2rem;
+    flex-wrap: wrap;
 }
 
+/* Left Section - sec1 (1 part of the 1:2 ratio) */
 .sec .sec1 {
-    margin: 10px;
     flex: 1;
+    min-width: 250px;
     display: flex;
     flex-direction: column;
     color: white;
-    
+}
+
+/* Right Section - sec2 (2 parts of the 1:2 ratio) */
+.sec .sec2 {
+    flex: 3;
+    min-width: 300px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 0 1rem gray;
+    padding: 2rem;
+    border-radius: 1rem;
 }
 
 .sec1 input {
-    margin: 5px;
-    height: 30px;
-    width: 200px;
-    padding: 2px;
-    border-radius: 5px;
+    margin: 0.5rem 0;
+    height: 2.5rem;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    border:none;
+    background-color:rgb(58, 58, 58);
+    color: white;
+    box-shadow: 0px 0px 10px gray;
 }
 
 .sec1 button {
-    margin: 10px 10px 20px 0px;
-    padding: 10px;
+    margin: 1rem 0;
+    padding: 0.75rem;
     border: none;
-    background-color: rgb(255, 65, 65);
+    background-color: rgb(58, 58, 58);
     color: white;
-    border-radius: 5px;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    transition: 0.3s;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
 }
 
 button:hover {
-    opacity: 0.7;
+    opacity: 0.9;
     cursor: pointer;
+    font-weight:bolder;
 }
 
 .sec1 select {
-    border-radius: 10px;
+    border-radius: 0.5rem;
     text-align: center;
-    padding: 5px;
-    margin: 5px;
-    color: black;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    color: white;
+    background-color: rgb(58, 58, 58);
+    font-size: 1rem;
+    box-shadow: 0px 0px 10px gray;
+    border: none;
 }
 
 .sec1 select option {
-    color: black;
-}
-.sec2{
     color: white;
-    text-align: center;
+    border: none;
 }
-.sec2 .order{
-    font-size: 50px;
+
+.sec2 .order {
+    font-size: 3rem;
+    margin-bottom: 2rem;
 }
-.sec2 .menu{
+
+.sec2 .menu {
     display: grid;
-    grid-template-columns: repeat(5,1fr);
-    padding:5px;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+    padding: 1rem;
 }
-.sec2 .menu .card img{
-    width:100px;
-    height:100px;
-    border-radius: 10px;
-}
-.sec2 .menu .card{
+
+.sec2 .menu .card {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width:180px;
-    padding:10px;
-    box-shadow: 0px 0px 10px lightgray;
-    margin:20px;  
-    border-radius: 10px;
+    width: 100%;
+    max-width: 180px;
+    padding: 1rem;
+    box-shadow: 0 0 1rem lightgray;
+    border-radius: 1rem;
+    transition: 0.3s;
+    color:white;
 }
-.sec2 .menu .card:hover{
+
+.sec2 .menu .card:hover {
     transform: scale(1.09);
-    box-shadow: 0px 0px 10px red;
+    box-shadow: 0 0 1rem red;
+    font-weight:bolder;
 }
-.sec2 .menu .card input{
-    width: 30px;
+
+.sec2 .menu .card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 0.75rem;
+    object-fit: cover;
 }
-.sec2 .menu .card label{
-    margin-top: 5px;
+
+.sec2 .menu .card input {
+    width: 2.5rem;
+    text-align: center;
+    margin-top: 0.5rem;
 }
-.sec2{
-    box-shadow: 0px 0px 10px gray;
+
+.sec2 .menu .card label {
+    margin-top: 0.5rem;
+    font-size: 1rem;
 }
+
 #price {
-    margin: auto;
-    padding: 10px;
+    margin: 2rem auto;
+    padding: 1rem;
     background-color: rgba(238, 232, 117, 0.47);
-    border-radius: 10px;
-    width: 280px;
+    border-radius: 1rem;
+    width: 90%;
+    max-width: 280px;
     text-align: center;
 }
 
 #price button {
-    padding: 5px;
+    padding: 0.5rem 1rem;
     background-color: greenyellow;
-    border-radius: 5px;
+    border-radius: 0.5rem;
+    font-size: 1rem;
 }
 
 #payment {
-    overflow: visible !important;
-    margin: auto;
+    overflow: visible;
+    margin: 3rem auto;
     border: none;
-    width: 400px;
-    height: 280px;
+    width: 90%;
+    max-width: 400px;
+    height:23rem;
     text-align: center;
-    border-radius: 30px;
+    border-radius: 2rem;
+    background: white;
+    padding: 2rem;
 }
 
 #payment img {
-    border: 10px solid white;
-    border-radius: 100%;
+    border: 0.5rem solid white;
+    border-radius: 50%;
     width: 150px;
     height: 150px;
-    transform: translate(0%, -50%);
+    transform: translateY(-50%);
+    object-fit: cover;
 }
 
-#payment .pay {
-    transform: translateY(-50%);
+#payment .pay{
+    transform: translateY(-40%);
     color: black !important;
+    font-size: 1.2rem;
 }
 
 #payment h1 {
     color: rgb(1, 247, 1);
-    margin: 10px;
+    margin: 1rem 0;
 }
 
 #payment p {
-    margin-bottom: 20px;
+    margin-bottom: 1.5rem;
 }
 
 #payment button {
-    margin-top: 20px;
-    width: 150px;
-    padding: 5px;
+    margin-top: 1rem;
+    width: 60%;
+    max-width: 180px;
+    padding: 0.75rem;
     background-color: rgb(1, 247, 1);
-    border-radius: 20px;
+    border-radius: 1rem;
+    font-size: 1rem;
 }
