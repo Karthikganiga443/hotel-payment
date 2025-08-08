@@ -1,6 +1,11 @@
 # 🍽️ The Global Plate Restaurant - Food Ordering Website
 
-An interactive, user-friendly food ordering website designed for The Global Plate Restaurant. This single-page application allows users to book a table, select dishes from multiple cuisines, view total cost, and simulate a payment experience with success visuals and sound.
+A responsive web-based restaurant ordering and billing system that enables customers to:
+- Fill in their name and table number,
+- Choose dishes from various cuisines,
+- Automatically generate a PDF bill using jsPDF,
+- Simulate online payment with QR code,
+- Receive audio and animation confirmation upon successful payment.
 
 ## 🚀 Deployed URL
 
@@ -10,21 +15,23 @@ The website is live at: https://hotel-payment.vercel.app/
 
 ## 📁 Project Structure
 ```
-├── index.html                              # Main webpage with all sections
-├── ezgif.com-crop.gif                      # Payment success animation
-├── paytmpaymen-pfn2fc67_pFCzp9j8.mp3       # Payment success audio
+├── index.html # Main webpage
+├── hotel_payment.css # Styling (UI and layout)
+├── hotel_payment.js # JS logic (PDF, payment handling)
+├── paytmpaymen-pfn2fc67_pFCzp9j8.mp3 # Success sound
+├── ezgif.com-crop.gif # Payment success animation
 ```
 ---
 
 # 🌟 Features
 
-- 🧾 Table booking with name and phone number input
-- 🍛 Menu sections: South Indian, North Indian, Chinese, and Italian
-- 🧮 Live total price calculation from selected dishes
-- 📲 QR Code-based payment simulation
-- ✅ Payment confirmation popup with animated GIF and audio
-- 🖼️ Stylish layout with background image and clear section separation
-- 💻 Pure HTML, CSS, and JavaScript – no frameworks used
+- 💡 **User Input**: Name, Phone Number, and Table selection.
+- 🧾 **Dynamic Billing**: Calculates price based on dish quantities.
+- 📄 **PDF Generation**: Creates a printable bill using `jsPDF`.
+- 🖼️ **Visual UI**: Categorized menu with images and interactive quantity input.
+- 🎵 **Audio Feedback**: Confirmation audio on successful payment.
+- 📽️ **GIF Animation**: Shows "payment successful" animation.
+- 🌍 **Location Map**: Google Maps integration for the restaurant address.
 
 ---
 
@@ -40,10 +47,11 @@ The website is live at: https://hotel-payment.vercel.app/
 
 # 📎 How It Works
 
-1. User enters basic information and selects desired dishes.
-2. Clicks “Submit” to calculate total.
-3. If at least one item is selected, a modal shows the price and payment QR.
-4. Upon confirmation, a success animation and sound play.
-5. The user is returned to the homepage.
+1. Download all the files in the same folder.
+2. Open `index.html` in your browser.
+3. Fill in your name, phone number, and table.
+4. Select dish quantities.
+5. Click **Submit** to generate the bill.
+6. Click **Confirm** to simulate payment and download the PDF.
 
 ---
